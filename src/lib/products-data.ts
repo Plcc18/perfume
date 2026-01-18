@@ -12,7 +12,9 @@ export const defaultProducts: Product[] = [
     category: "masculino",
     size: "100ml",
     featured: true,
-    inStock: true
+    inStock: true,
+    concentration: "",
+    olfactiveFamily: ""
   },
   {
     id: "2",
@@ -24,7 +26,9 @@ export const defaultProducts: Product[] = [
     category: "feminino",
     size: "75ml",
     featured: true,
-    inStock: true
+    inStock: true,
+    concentration: "",
+    olfactiveFamily: ""
   },
   {
     id: "3",
@@ -36,7 +40,9 @@ export const defaultProducts: Product[] = [
     category: "unissex",
     size: "100ml",
     featured: false,
-    inStock: true
+    inStock: true,
+    concentration: "",
+    olfactiveFamily: ""
   },
   {
     id: "4",
@@ -49,7 +55,9 @@ export const defaultProducts: Product[] = [
     category: "feminino",
     size: "50ml",
     featured: true,
-    inStock: true
+    inStock: true,
+    concentration: "",
+    olfactiveFamily: ""
   },
   {
     id: "5",
@@ -61,7 +69,9 @@ export const defaultProducts: Product[] = [
     category: "masculino",
     size: "100ml",
     featured: false,
-    inStock: true
+    inStock: true,
+    concentration: "",
+    olfactiveFamily: ""
   },
   {
     id: "6",
@@ -73,6 +83,8 @@ export const defaultProducts: Product[] = [
     category: "feminino",
     size: "75ml",
     featured: true,
-    inStock: true
+    inStock: true,
+    concentration: "",
+    olfactiveFamily: ""
   }
 ]

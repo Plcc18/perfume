@@ -5,7 +5,7 @@ import React from "react"
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import type { Product } from "@/lib/types"
-import { getProducts, saveProducts, addProduct, updateProduct, deleteProduct } from "@/lib/store"
+import { getProducts, updateProduct, deleteProduct } from "@/lib/store"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -18,7 +18,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { ArrowLeft, Plus, Pencil, Trash2, Package, DollarSign, Tag, X } from "lucide-react"
+import { ArrowLeft, Plus, Pencil, Trash2, Package, DollarSign, Tag } from "lucide-react"
 
 type ProductFormData = {
   name: string
@@ -104,7 +104,7 @@ export function Admin() {
     if (editingProduct) {
       updateProduct(editingProduct.id, productData)
     } else {
-      addProduct(productData)
+      
     }
 
     setIsDialogOpen(false)
