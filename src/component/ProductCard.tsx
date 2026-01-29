@@ -2,11 +2,11 @@
 
 import { useState } from "react"
 import type { Product } from "@/lib/types"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
-import { Separator } from "@/components/ui/separator"
+import { Card, CardContent } from "@/Shadcn-Components/ui/card"
+import { Button } from "@/Shadcn-Components/ui/button"
+import { Badge } from "@/Shadcn-Components/ui/badge"
+import { Dialog, DialogContent, DialogTitle } from "@/Shadcn-Components/ui/dialog"
+import { Separator } from "@/Shadcn-Components/ui/separator"
 import { ShoppingBag, Plus, Minus } from "lucide-react"
 
 interface ProductCardProps {

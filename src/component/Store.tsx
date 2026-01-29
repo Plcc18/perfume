@@ -15,9 +15,9 @@ import {
 } from '@/lib/store'
 import { ProductCard } from './ProductCard'
 import { Cart } from './Cart'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Separator } from '@/components/ui/separator'
+import { Button } from '@/Shadcn-Components/ui/button'
+import { Badge } from '@/Shadcn-Components/ui/badge'
+import { Separator } from '@/Shadcn-Components/ui/separator'
 import { cn } from '@/lib/utils'
 import {
   ShoppingBag,
@@ -43,12 +43,12 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-} from '@/components/ui/sheet'
+} from '@/Shadcn-Components/ui/sheet'
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/components/ui/popover'
+} from '@/Shadcn-Components/ui/popover'
 import {
   Command,
   CommandEmpty,
@@ -57,12 +57,12 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from '@/components/ui/command'
-import { Slider } from '@/components/ui/slider'
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
+} from '@/Shadcn-Components/ui/command'
+import { Slider } from '@/Shadcn-Components/ui/slider'
+import { Avatar, AvatarFallback, AvatarImage } from "@/Shadcn-Components/ui/avatar"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/Shadcn-Components/ui/dialog"
+import { Label } from "@/Shadcn-Components/ui/label"
+import { Input } from "@/Shadcn-Components/ui/input"
 import { toast } from "sonner"
 import { useNavigate } from "react-router-dom"
 import { useRef } from "react"

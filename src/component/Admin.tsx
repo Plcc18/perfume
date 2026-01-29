@@ -4,28 +4,28 @@ import React, { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import type { Product } from "@/lib/types"
 import { getProducts, updateProduct, deleteProduct, addProduct } from "@/lib/store"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
+import { Button } from "@/Shadcn-Components/ui/button"
+import { Input } from "@/Shadcn-Components/ui/input"
+import { Label } from "@/Shadcn-Components/ui/label"
+import { Textarea } from "@/Shadcn-Components/ui/textarea"
+import { Card, CardContent, CardHeader, CardTitle } from "@/Shadcn-Components/ui/card"
+import { Badge } from "@/Shadcn-Components/ui/badge"
+import { Separator } from "@/Shadcn-Components/ui/separator"
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogFooter,
-} from "@/components/ui/dialog"
+} from "@/Shadcn-Components/ui/dialog"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { Checkbox } from "@/components/ui/checkbox"
+} from "@/Shadcn-Components/ui/select"
+import { Checkbox } from "@/Shadcn-Components/ui/checkbox"
 import {
   Table,
   TableBody,
@@ -33,7 +33,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/Shadcn-Components/ui/table"
 import {
   ArrowLeft,
   Plus,
@@ -46,16 +46,9 @@ import {
   X,
   Loader2,
 } from "lucide-react"
+import { emptyForm, type ProductFormData, type SmartImageUploaderProps } from "@/types"
 
-// ============================================================================
-// Componente SmartImageUploader
-// ============================================================================
-interface SmartImageUploaderProps {
-  value: string
-  onChange: (newValue: string) => void
-  className?: string
-  maxSizeMB?: number
-}
+//Types importados do types.ts
 
 function SmartImageUploader({
   value,
@@ -205,38 +198,7 @@ function SmartImageUploader({
   )
 }
 
-// ============================================================================
-// Tipos e valores iniciais
-// ============================================================================
-type ProductFormData = {
-  name: string
-  brand: string
-  description: string
-  price: string
-  originalPrice: string
-  image: string
-  category: "masculino" | "feminino" | "unissex"
-  size: string
-  concentration?: string
-  olfactiveFamily?: string
-  featured: boolean
-  inStock: boolean
-}
 
-const emptyForm: ProductFormData = {
-  name: "",
-  brand: "",
-  description: "",
-  price: "",
-  originalPrice: "",
-  image: "",
-  category: "feminino",
-  size: "100ml",
-  concentration: "",
-  olfactiveFamily: "",
-  featured: false,
-  inStock: true,
-}
 
 // ============================================================================
 // Componente Principal - Admin
@@ -645,12 +607,13 @@ export function Admin() {
                         <SelectValue placeholder="Selecione a família olfativa" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="cítrica">Cítrica</SelectItem>
                         <SelectItem value="floral">Floral</SelectItem>
-                        <SelectItem value="amadeirada">Amadeirada</SelectItem>
+                        <SelectItem value="amadeirada">Amadeirado</SelectItem>
+                        <SelectItem value="citrico">Cítrico</SelectItem>
                         <SelectItem value="oriental">Oriental</SelectItem>
-                        <SelectItem value="fougère">Fougère</SelectItem>
-                        <SelectItem value="frutada">Frutada</SelectItem>
+                        <SelectItem value="aquatico">aquatico</SelectItem>
+                        <SelectItem value="frutado">Frutado</SelectItem>
+                        <SelectItem value="gourmand">Gourmand</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

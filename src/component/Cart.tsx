@@ -3,16 +3,16 @@
 import { useState } from 'react'
 import type { CartItem } from '@/lib/types'
 import { getCartTotal } from '@/lib/store'
-import { Button } from '@/components/ui/button'
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { Separator } from '@/components/ui/separator'
+import { Button } from '@/Shadcn-Components/ui/button'
+import { ScrollArea } from '@/Shadcn-Components/ui/scroll-area'
+import { Separator } from '@/Shadcn-Components/ui/separator'
 import { X, Minus, Plus, Trash2, ShoppingBag, Package, Truck } from 'lucide-react'
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
-} from '@/components/ui/sheet'
+} from '@/Shadcn-Components/ui/sheet'
 
 // Componente Modal de Checkout
 import {
@@ -21,10 +21,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogFooter,
-} from '@/components/ui/dialog'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
+} from '@/Shadcn-Components/ui/dialog'
+import { Input } from '@/Shadcn-Components/ui/input'
+import { Label } from '@/Shadcn-Components/ui/label'
+import { RadioGroup, RadioGroupItem } from '@/Shadcn-Components/ui/radio-group'
 
 interface CartProps {
   isOpen: boolean
